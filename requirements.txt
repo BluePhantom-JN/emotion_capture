@@ -3,4 +3,6 @@ torch
 torchvision
 Pillow
 matplotlib
-opencv
+streamlit
+opencv-python
+dlib
