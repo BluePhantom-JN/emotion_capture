@@ -5,7 +5,7 @@ import torch.nn.functional as F
 from torchvision import transforms
 from PIL import Image
 #import cv2
-import dlib
+#import dlib
 import numpy as np
 
 # Set Streamlit page config
