@@ -4,4 +4,3 @@ torchvision
 Pillow
 matplotlib
 dlib
-opencv-python
