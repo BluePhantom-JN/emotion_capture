@@ -109,14 +109,14 @@ if uploaded_file is not None:
                 st.image(uploaded_file, caption="Original Image", width=250)
             
             with col2:
-                st.subheader("🔮 Model 1 Prediction")
+                st.subheader("Model 1 Prediction")
                 st.write(f"Top Emotion: **{emotions[top_indices[0][0]]}**")
                 st.write("Top 3 Probabilities:")
                 for i in range(3):
                     st.write(f"{emotions[top_indices[0][i]]}: {top_probs[0][i].item():.4f}")
 
                 st.markdown("---")
-                st.subheader("🔮 Model 2 Prediction")
+                st.subheader("Model 2 Prediction")
                 st.write(f"Top Emotion: **{emotions[top_indices1[0][0]]}**")
                 st.write("Top 3 Probabilities:")
                 for i in range(3):
