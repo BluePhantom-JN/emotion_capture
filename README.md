@@ -42,3 +42,8 @@
   - with learning rate of 0.0001
   - epoch 10
   - dataloader batch_size = 250
+## Model Parameters
+  - criterion = CrossEntropyLoss()
+    - for multi class classification
+  - optimizer = Adam()
+    - adaptive movement estimation
