@@ -16,21 +16,21 @@
   - Normalize(mean=[0.5], std=[0.5])
 ## Model Training
   - model we train is SimpleCNN model
-    -> conv2d (input_channel=1,output_channel=8,padding=0,kernael=5,stride=1)
-    -> AvgPool2d(kernel_size=3, stride=3)
-    -> Conv2d(8, 16, kernel_size=3, stride=1, padding=0)
-    -> AvgPool2d(kernel_size=2, stride=2)
-    -> nn.Flatten()
-    -> Linear(17*17*16 , 128)
-    -> Linear(128,64)
-    -> Linear(64,output class)
+    - conv2d (input_channel=1,output_channel=8,padding=0,kernael=5,stride=1)
+    - AvgPool2d(kernel_size=3, stride=3)
+    - Conv2d(8, 16, kernel_size=3, stride=1, padding=0)
+    - AvgPool2d(kernel_size=2, stride=2)
+    - nn.Flatten()
+    - Linear(17*17*16 , 128)
+    - Linear(128,64)
+    - Linear(64,output class)
 
   - output size of img = ((height - kernel +2*padding)/stride)+1
-    -> (112x112x1) -> (108x108x8)
-    -> (108x108x8) -> (36x36x8)
-    -> (36x36x8) -> (34x34x16)
-    -> (34x34x16) -> (17x17x16)
+    - (112x112x1) - (108x108x8)
+    - (108x108x8) - (36x36x8)
+    - (36x36x8) - (34x34x16)
+    - (34x34x16) - (17x17x16)
 
   - Forward
-    -> Linear
-    -> relu introduce non linearity btw the layers
+    - Linear
+    - relu introduce non linearity btw the layers
