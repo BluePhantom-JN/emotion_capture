@@ -34,3 +34,11 @@
   - Forward
     - Linear
     - relu introduce non linearity btw the layers
+### model 1
+  - with learning rate of 0.001
+  - epoch 10
+  - dataloader batch_size=1000
+### model 2
+  - with learning rate of 0.0001
+  - epoch 10
+  - dataloader batch_size = 250
