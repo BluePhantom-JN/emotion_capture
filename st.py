@@ -67,7 +67,7 @@ def load_models():
     model.eval()
 
     model1 = SimpleCNN1(output=7)
-    model1.load_state_dict(torch.load("emotion_data_final (1).pth", map_location=torch.device('cpu')))
+    model1.load_state_dict(torch.load("emotion_data_final.pth", map_location=torch.device('cpu')))
     model1.eval()
     
     return model, model1
